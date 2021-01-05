@@ -1,20 +1,5 @@
-{
-  "multimedia/squeezebox.hni": {
-    "squeezebox": {
-      "label": {
-        "name": "Name",
-        "server": "Server",
-        "port": "Port",
-        "player": "Player",
-        "p0": "P0",
-        "p1": "P1",
-        "p2": "P2",
-        "p3": "P3",
-        "p4": "P4"
-      },
-      "tip": "Tip: See the Info tab for help writing functions.",
-      "paletteHelp": "<p>Send commands to a squeezebox.</p>",
-      "help": "<p>This node sends commands to a squeezebox.</p>|p0|p1|p2|p3|p4|Description|
+<p>This node sends commands to a squeezebox.</p>
+|p0|p1|p2|p3|p4|Description|
 |---|---|---|---|---|---|
 |play|||||Start the player playing|
 |pause|(0,1,)||||Pause/unpause player. p1=1 to pause, p1=0 to unpause, omit p1 to toggle|
@@ -46,7 +31,3 @@
 |playerpref|<name>|<value>|||Set the value of a player specific preference. Use a value of "?" to get the value in the returned p2 header|
 |playerpref|<name>|?|||Get the value of a player-specific preference. The value is returned in the returned p2 header|
 |debug|<flag>|<value>|||Set the value of a debugging variable, for example, set "d_ir" to "1" to have infrared debugging output.|
-"
-    }
-  }
-}
